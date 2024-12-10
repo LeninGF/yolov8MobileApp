@@ -1,13 +1,15 @@
-name: yolov8mobileapp
+name: ultralytics-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
-  - black
-  - flake8
-  - isort
-  - pip
-  - pip:
-    - python-dotenv
-    - mkdocs
-    - -e .
+  - python=3.11
+  - ultralytics
+  - ca-certificates
+  - openssl
+  - torchvision
+  - pytorch-cuda=11.8
+  - certifi
+  - ipython
+  - pytorch
+  - ipykernel
+prefix: /home/lasinac/miniforge3/envs/ultralytics-env
