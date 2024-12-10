@@ -6,6 +6,7 @@ object Constants {
     // const val MODEL_PATH = "yolov5s-fp16.tflite"
     //const val MODEL_PATH = "model_forks.tflite"
     // const val LABELS_PATH = "labels.txt" // forks
-    const val LABELS_PATH = "labels_v8.txt" // forks
+    // const val LABELS_PATH = "labels_eng.txt"
+    const val LABELS_PATH = "labels_es.txt" // esp
 }
 
