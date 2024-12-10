@@ -17,8 +17,9 @@ Los pasos se encuentran en el notebook `yolov8mobileapp\notebooks\yolo_explore.i
 5. Se realizó una validación del modelo exportado en TFLITE alcanzando un mAP50 de 0.71
 6. Se ejecutó una prueba sobre una imagen de muestra
 7. Se copia el modelo a la carpeta de assets
-
+``` bash
     cp yolov8mobileapp\models\yolov5s-fp16.tflite  android_app\android_app\app\src\main\assets\
+```
 
 ## Aplicación Android Studio
 1. Se coloca el modelo en la carpeta de assets
