@@ -57,9 +57,10 @@ class  MainActivity : AppCompatActivity(), Detector.DetectorListener {
         cameraExecutor = Executors.newSingleThreadExecutor()
 
         val button = findViewById<Button>(R.id.button)
-
+        button.tag = detector
         button.setOnClickListener {
-            val clip = ClipData.newPlainText("label", "Texto mági")
+            val det = it.tag as Detector
+            val clip = ClipData.newPlainText("label", det.predictions)
             (getSystemService(CLIPBOARD_SERVICE) as ClipboardManager?)?.setPrimaryClip(clip)
 
             Toast.makeText(this, "Texto copiado al portapapeles", Toast.LENGTH_SHORT).show()

@@ -32,6 +32,8 @@ class Detector(
     private var numChannel = 0
     private var numElements = 0
 
+    var predictions = "Sin predicciones"
+
     private val imageProcessor = ImageProcessor.Builder()
         .add(NormalizeOp(INPUT_MEAN, INPUT_STANDARD_DEVIATION))
         .add(CastOp(INPUT_IMAGE_TYPE))
@@ -98,8 +100,11 @@ class Detector(
         //Log.d("ZT_detecting", "inference shape: ${output.contentToString()}")
         val bestBoxes = bestBox(output.floatArray)
         val numberOfBestBoxes = bestBoxes?.size
-
-        Log.d("ZT_detecting", "preds: ${bestBoxes.toString()}")
+        predictions = if (numberOfBestBoxes != null)
+            bestBoxes.toString()
+        else
+            "Sin predicciones"
+        Log.d("ZT_detecting", "Num of best boxes: ${numberOfBestBoxes}, preds: ${predictions}")
         inferenceTime = SystemClock.uptimeMillis() - inferenceTime
 
 
