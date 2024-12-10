@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">YOLO EPN TfLite</string>
-    <string name="button_txt">Guardar</string>
+    <string name="button_txt">Copiar predicciones</string>
 </resources>

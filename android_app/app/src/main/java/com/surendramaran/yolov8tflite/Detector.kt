@@ -97,6 +97,9 @@ class Detector(
         Log.d("ZT_detecting", "Inference time: ${SystemClock.uptimeMillis() - inferenceTime}ms")
         //Log.d("ZT_detecting", "inference shape: ${output.contentToString()}")
         val bestBoxes = bestBox(output.floatArray)
+        val numberOfBestBoxes = bestBoxes?.size
+
+        Log.d("ZT_detecting", "preds: ${bestBoxes.toString()}")
         inferenceTime = SystemClock.uptimeMillis() - inferenceTime
 
 

@@ -1,11 +1,15 @@
 package com.surendramaran.yolov8tflite
 
 import android.Manifest
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Matrix
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.AspectRatio
@@ -51,6 +55,16 @@ class  MainActivity : AppCompatActivity(), Detector.DetectorListener {
         }
 
         cameraExecutor = Executors.newSingleThreadExecutor()
+
+        val button = findViewById<Button>(R.id.button)
+
+        button.setOnClickListener {
+            val clip = ClipData.newPlainText("label", "Texto mági")
+            (getSystemService(CLIPBOARD_SERVICE) as ClipboardManager?)?.setPrimaryClip(clip)
+
+            Toast.makeText(this, "Texto copiado al portapapeles", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun startCamera() {
@@ -168,6 +182,7 @@ class  MainActivity : AppCompatActivity(), Detector.DetectorListener {
 
     override fun onDetect(boundingBoxes: List<BoundingBox>, inferenceTime: Long) {
         runOnUiThread {
+            binding.detections.text = "Núm. detecciones: ${boundingBoxes.size}"
             binding.inferenceTime.text = "Tiempo inferencia: ${inferenceTime} ms"
             binding.overlay.apply {
                 setResults(boundingBoxes)
