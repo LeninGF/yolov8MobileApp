@@ -10,7 +10,7 @@ Repositorio del desarrollo del Proyecto de la clase de **Tópicos Especiales 202
 
 
 ## Indicaciones Generales del Proyecto
-Para navegar por el repositorio suponemos que la ubicación por defecto es la carpeta root o raíz de este repositorio (.) a partir de la cual se definen las diferentes rutas. Por ejemplo, para encontrar los Jupyter Notebooks se irá a la ruta `./yolov8mobileapp/notebooks`. Se proveerán rutas para facilitar la navegación a diferentes sitios de interés de este documento e.g.[notebooks](./yolov8mibileapp/notebooks).
+Para navegar por el repositorio suponemos que la ubicación por defecto es la carpeta root o raíz de este repositorio (.) a partir de la cual se definen las diferentes rutas. Por ejemplo, para encontrar los Jupyter Notebooks se irá a la ruta `./yolov8mobileapp/notebooks`. Se proveerán rutas para facilitar la navegación a diferentes sitios de interés de este documento e.g. [notebooks](./yolov8mobileapp/notebooks).
 
 El proyecto se divide en dos partes:
 1. **yolov8mibileapp**: contiene información relevante al proyecto de
