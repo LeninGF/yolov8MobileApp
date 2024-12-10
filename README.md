@@ -21,8 +21,9 @@ El proyecto se divide en dos partes:
 2. **android_app**: contiene los archivos relevantes a la aplicación
    Android. Se sugiere revisar el proyecto en Android Studio.
 
-## Obtención de Modelo TF-LTE
-Los pasos se encuentran en el notebook `yolov8mobileapp\notebooks\yolo_explore.ipynb` y son
+## Yolo Model
+### Obtención de Modelo TF-LTE
+Los pasos se encuentran en el [./yolov8mobileapp/notebooks/yolo_explore.ipynb](yolo_explore.ipynb) y en [./yolov8mobileapp/notebooks/yoloV8.ipynb](yoloV8.ipynb). Los pasos principales son:
 1. Clonar el repositorio de Yolo
 2. Instalar los paquetes en Colab a partir de `requirements.txt`
 3. Se hicieron pruebas de benchmark del Modelo
@@ -33,6 +34,12 @@ Los pasos se encuentran en el notebook `yolov8mobileapp\notebooks\yolo_explore.i
 ``` bash
     cp yolov8mobileapp\models\yolov5s-fp16.tflite  android_app\android_app\app\src\main\assets\
 ```
+### Modelos
+Los scripts de exportación de formato por defecto generan versions a
+16 y 32 bits. Los modelos se encuentran en:
+
+- Modelo de 16 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite](yolov8n_float16.tflite)
+- Modelo de 32 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite](yolov8n_float32.tflite)
 
 ## Aplicación Android Studio
 1. Se coloca el modelo en la carpeta de assets
