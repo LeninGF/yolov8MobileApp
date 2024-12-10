@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">YOLO EPN TfLite</string>
+    <string name="button_txt">Guardar</string>
 </resources>
