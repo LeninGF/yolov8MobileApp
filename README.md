@@ -2,12 +2,25 @@
 
 Repositorio del desarrollo del Proyecto de la clase de **Tópicos Especiales 2024B1**.
 
-## Indicaciones Generales de Navegación
-Para navegar por el repositorio suponemos que la ubicación por defecto es la carpeta root o raíz de este repositorio (.). A partir de dicha localidad se definen las diferentes carpetas y archivos. Por ejemplo, para encontrar un Jupyter Notebook se irá a la ruta `./yolov8mobileapp/notebooks`.
+## Integrantes:
+
+- Lenin G. Falconí
+- Mario Moreno
+- Jonathan Zea
+
+
+## Indicaciones Generales del Proyecto
+Para navegar por el repositorio suponemos que la ubicación por defecto es la carpeta root o raíz de este repositorio (.) a partir de la cual se definen las diferentes rutas. Por ejemplo, para encontrar los Jupyter Notebooks se irá a la ruta `./yolov8mobileapp/notebooks`. Se proveerán rutas para facilitar la navegación a diferentes sitios de interés de este documento e.g.[notebooks](./yolov8mibileapp/notebooks).
 
 El proyecto se divide en dos partes:
-- yolov8mibileapp: contiene información relevante al proyecto de datascience. E.g. obtención del modelo Yolo en TFLITE. Se lo ha preparado de esta manera para en caso de desear hacer un *fine tuning* al modelo con otros datos, colocar los archivos necesarios para hacerlo. La estructura de este folder se ha obtenido con cookiecutter desde la template para datascience `ccds`.
-- android_app: contiene los archivos relevantes a la aplicación Android. Se sugiere revisar el proyecto en Android Studio.
+1. **yolov8mibileapp**: contiene información relevante al proyecto de
+   ciencias de datos. Es decir, se describe la obtención del modelo
+   Yolo en TFLITE. La estructura de archivos se ha obtenido con
+   [cookiecutter](https://www.cookiecutter.io/) desde la template para
+   datascience `ccds`.
+2. **android_app**: contiene los archivos relevantes a la aplicación
+   Android. Se sugiere revisar el proyecto en Android Studio.
+
 ## Obtención de Modelo TF-LTE
 Los pasos se encuentran en el notebook `yolov8mobileapp\notebooks\yolo_explore.ipynb` y son
 1. Clonar el repositorio de Yolo
