@@ -1,4 +1,4 @@
-# yolov8MobileApp
+# YOLO EPN TFLITE APP
 
 Repositorio del desarrollo del Proyecto de la clase de **Tópicos Especiales 2024B1**.
 
