@@ -21,8 +21,8 @@ El proyecto se divide en dos partes:
 2. **android_app**: contiene los archivos relevantes a la aplicación
    Android. Se sugiere revisar el proyecto en Android Studio.
 
-## Yolo Model
-### Obtención de Modelo TF-LTE
+
+## 1. Obtención de Modelo TF-LTE
 Los pasos se encuentran en el [./yolov8mobileapp/notebooks/yolo_explore.ipynb](yolo_explore.ipynb) y en [./yolov8mobileapp/notebooks/yoloV8.ipynb](yoloV8.ipynb). Los pasos principales son:
 1. Clonar el repositorio de Yolo
 2. Instalar los paquetes en Colab a partir de `requirements.txt`
@@ -34,15 +34,20 @@ Los pasos se encuentran en el [./yolov8mobileapp/notebooks/yolo_explore.ipynb](y
 ``` bash
     cp yolov8mobileapp\models\yolov5s-fp16.tflite  android_app\android_app\app\src\main\assets\
 ```
-### Modelos
-Los scripts de exportación de formato por defecto generan versions a
-16 y 32 bits. Los modelos se encuentran en:
-
-- Modelo de 16 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite](yolov8n_float16.tflite)
-- Modelo de 32 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite](yolov8n_float32.tflite)
-
-## Aplicación Android Studio
-1. Se coloca el modelo en la carpeta de assets
+## 2. Configuración Modelo YOLO
+android_app\app\src\main\assets
+1. Se coloca el modelo en la carpeta de [./yolov8mobileapp/android_app/app/src/main/assets](assets)
 2. Se coloca el archivo de labels en la carpeta de assets
 3. Se ajusta las direcciones en el archivo `android_app/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt`
 4. Reconstruir la aplicación y ejecutar
+
+## 3. Optimización de Modelos para móviles
+Los scripts de exportación de formato por defecto generan versiones de
+16 y 32 bits. Los modelos se encuentran en:
+
+- Modelo de 16 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite](yolov8n_float16.tflite) de 65 MBytes
+- Modelo de 32 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite](yolov8n_float32.tflite) de 129 MBytes
+
+Puede observarse que el modelo de 16 bits es más ligero y portable para dispositivos móviles.
+
+
