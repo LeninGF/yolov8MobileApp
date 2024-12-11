@@ -39,7 +39,7 @@ principales son:
 ```
 ## 2. Configuración Modelo YOLO
 android_app\app\src\main\assets
-1. Se coloca el modelo en la carpeta de [assets](./yolov8mobileapp/android_app/app/src/main/assets)
+1. Se coloca el modelo en la carpeta de [assets](./android_app\app\src\main\assets)
 2. Se coloca el archivo de labels en la carpeta de assets
 3. Se ajusta las direcciones en el archivo `android_app/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt`
 4. Reconstruir la aplicación y ejecutar
@@ -48,8 +48,8 @@ android_app\app\src\main\assets
 Los scripts de exportación de formato por defecto generan versiones de
 16 y 32 bits. Los modelos se encuentran en:
 
-- Modelo de 16 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite](yolov8n_float16.tflite) de 65 MBytes
-- Modelo de 32 bits: [./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite](yolov8n_float32.tflite) de 129 MBytes
+- Modelo de 16 bits: [yolov8n_float16.tflite](./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite) de 65 MBytes
+- Modelo de 32 bits: [yolov8n_float32.tflite](./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite) de 129 MBytes
 
 Puede observarse que el modelo de 16 bits es más ligero y portable para dispositivos móviles.
 
