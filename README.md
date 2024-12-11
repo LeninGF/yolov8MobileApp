@@ -71,7 +71,7 @@ de 0.675, el Recall de 0.675 y el mAP50 de 0.71.
 ### Matriz de Confusión
 ![Matriz de Confusión](./yolov8mobileapp/reports/figures/validation_exported_model/confusion_matrix.png)
 ### Precision vs Recall
-![Precision-Recall](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/PR_curve.png)
+![Precision-Recall](./yolov8mobileapp/reports/figures/validation_exported_model/PR_curve.png)
 
 Más imágenes se pueden consultar en la carpeta de [reports](https://github.com/LeninGF/yolov8MobileApp/tree/main/yolov8mobileapp/reports/figures/validation_exported_model)
 
@@ -79,9 +79,9 @@ Más imágenes se pueden consultar en la carpeta de [reports](https://github.com
 Varias capturas se han llevado a cabo con la Aplicación YOLO EPN Tflite. Éstas se encuentran en la carpeta 
 
 
-![Captura1](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture1.jpg)
-![Captura2](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture3.jpg)
-![Captura3](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture4.jpg)
+![Captura1](./yolov8mobileapp/reports/Capturas/capture2.jpg)
+![Captura2](./yolov8mobileapp/reports/Capturas/capture3.jpg)
+![Captura3](./yolov8mobileapp/reports/Capturas/capture4.jpg)
 
 A pesar de que el modelo es bastante económico para un dispositivo
 móvil, depende un tanto del hardware del equipo un procesamiento
