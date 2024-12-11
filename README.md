@@ -23,7 +23,10 @@ El proyecto se divide en dos partes:
 
 
 ## 1. Obtención de Modelo TF-LTE
-Los pasos se encuentran en el [./yolov8mobileapp/notebooks/yolo_explore.ipynb](yolo_explore.ipynb) y en [./yolov8mobileapp/notebooks/yoloV8.ipynb](yoloV8.ipynb). Los pasos principales son:
+Los pasos se encuentran en el
+[yolo_explore.ipynb](./yolov8mobileapp/notebooks/yolo_explore.ipynb) y
+en [yoloV8.ipynb](./yolov8mobileapp/notebooks/yoloV8.ipynb). Los pasos
+principales son:
 1. Clonar el repositorio de Yolo
 2. Instalar los paquetes en Colab a partir de `requirements.txt`
 3. Se hicieron pruebas de benchmark del Modelo
@@ -36,7 +39,7 @@ Los pasos se encuentran en el [./yolov8mobileapp/notebooks/yolo_explore.ipynb](y
 ```
 ## 2. Configuración Modelo YOLO
 android_app\app\src\main\assets
-1. Se coloca el modelo en la carpeta de [./yolov8mobileapp/android_app/app/src/main/assets](assets)
+1. Se coloca el modelo en la carpeta de [assets](./yolov8mobileapp/android_app/app/src/main/assets)
 2. Se coloca el archivo de labels en la carpeta de assets
 3. Se ajusta las direcciones en el archivo `android_app/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt`
 4. Reconstruir la aplicación y ejecutar
