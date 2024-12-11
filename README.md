@@ -54,7 +54,18 @@ Los scripts de exportación de formato por defecto generan versiones de
 
 Puede observarse que el modelo de 16 bits es más ligero y portable
 para dispositivos móviles. Adicionalmente se utilizaron los scripts de
-evaluación para conocer el rendimiento del modelo de 16 bits. Los resultados de clasificación se pueden observar en las Figuras.
+evaluación para conocer el rendimiento del modelo de 16 bits. 
+
+```python
+python val.py --weights yolov5s-fp16.tflite
+```
+
+Los resultados de clasificación se pueden observar en las Figuras
+siguientes. En general el modelo tiene una velocidad promedio de 0.4
+ms para pre procesamiento y 268.4 ms para inferencia. La Precisión es
+de 0.675, el Recall de 0.675 y el mAP50 de 0.71.
+
+
 
 
 
