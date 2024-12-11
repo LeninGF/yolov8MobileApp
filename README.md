@@ -70,11 +70,37 @@ de 0.675, el Recall de 0.675 y el mAP50 de 0.71.
 ### Precision vs Recall
 ![Precision-Recall](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/PR_curve.png)
 
-Más imágenes se pueden consultar en la carpeta de [reports](https://github.com/LeninGF/yolov8MobileApp/tree/main/yolov8mobileapp/reports)
+Más imágenes se pueden consultar en la carpeta de [reports](https://github.com/LeninGF/yolov8MobileApp/tree/main/yolov8mobileapp/reports/figures/validation_exported_model)
 
 ## 4. Captura de Imágenes en Tiempo Real 
 Varias capturas se han llevado a cabo con la Aplicación YOLO EPN Tflite. Éstas se encuentran en la carpeta 
 
 
+![Captura1](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture1.jpg)
+![Captura2](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture3.jpg)
+![Captura3](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/Capturas/capture4.jpg)
 
+A pesar de que el modelo es bastante económico para un dispositivo
+móvil, depende un tanto del hardware del equipo un procesamiento
+rápido. Por esta razón en eventos como el partido de fútbol o autos en
+movimiento, la detección se da pero con un retraso o lag. La
+aplicación de hecho muestra que la inferencia se realiza en el orden
+de 300 mili segundos.
+
+## 5. Pruebas
+La aplicación con el modelo de YOLO responde bastante bien para
+ambientes estáticos. Existen falsos positivos en algunos casos. Se ha
+de observar, que el modelo utiliza un total de 80 categorías de
+predicción. Es factible que el hardware del dispositivo influya en el
+rendimiento del procesamiento. No obstante, el tamaño de la aplicación
+es bastante amigable siendo de 197 MBytes.
+
+## 6. Instalación
+Para la instalación:
+
+1. Descargue el app_v1.apk desde la carpeta [out](https://github.com/LeninGF/yolov8MobileApp/tree/main/android_app/out)
+2. Instale en su equipo dando permisos de funcionamiento según convenga
+3. Abra la aplicación.
+4. Acepte el acceso a la cámara.
+4. Apunte la cámara hacia los objetos que sean de su interés explorar. La lista de categorías puede ver en el siguiente [enlace](https://github.com/LeninGF/yolov8MobileApp/blob/main/android_app/app/src/main/assets/labels_es.txt)
 
