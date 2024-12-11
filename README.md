@@ -8,6 +8,10 @@ Repositorio del desarrollo del Proyecto de la clase de **Tópicos Especiales 202
 - Mario Moreno
 - Jonathan Zea
 
+## Entregables
+
+1. El código está disponible en GitHub en https://github.com/LeninGF/yolov8MobileApp
+2. La documentación adicional del proyecto está disponible en [SharePoint](https://epnecuador-my.sharepoint.com/:f:/g/personal/mario_moreno01_epn_edu_ec/Ekn3MDBdmutHjkwWPDeE_WMB8XlnB3wd-CKzuZp1pKvKeQ?e=vmwYVj)
 
 ## Indicaciones Generales del Proyecto
 Para navegar por el repositorio suponemos que la ubicación por defecto es la carpeta root o raíz de este repositorio (.) a partir de la cual se definen las diferentes rutas. Por ejemplo, para encontrar los Jupyter Notebooks se irá a la ruta `./yolov8mobileapp/notebooks`. Se proveerán rutas para facilitar la navegación a diferentes sitios de interés de este documento e.g. [notebooks](./yolov8mobileapp/notebooks).
