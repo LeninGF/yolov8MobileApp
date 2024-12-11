@@ -42,7 +42,7 @@ android_app\app\src\main\assets
 android_app\app\src\main\java\com\surendramaran\yolov8tflite\Constants.kt
 1. Se coloca el modelo en la carpeta de [assets](./android_app/app/src/main/assets)
 2. Se coloca el archivo de labels en la carpeta de assets
-3. Se ajusta las direcciones en el archivo [Constants.kt](./android_app/app/src/main/java/com/surendramaran/yolo8tflite/Constants.kt)
+3. Se ajusta las direcciones en el archivo [Constants.kt](https://github.com/LeninGF/yolov8MobileApp/blob/main/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt)
 4. Reconstruir la aplicación y ejecutar
 
 ## 3. Optimización de Modelos para móviles
