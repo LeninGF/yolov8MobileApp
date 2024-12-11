@@ -22,6 +22,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.surendramaran.yolov8tflite.Constants.LABELS_PATH
 import com.surendramaran.yolov8tflite.Constants.MODEL_PATH
+import com.surendramaran.yolov8tflite.Constants.VERSION_ID
 import com.surendramaran.yolov8tflite.databinding.ActivityMainBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -45,6 +46,8 @@ class  MainActivity : AppCompatActivity(), Detector.DetectorListener {
 
         detector = Detector(baseContext, MODEL_PATH, LABELS_PATH, this)
         detector.setup()
+        val modelText = MODEL_PATH.removeSuffix(".tflite")
+        binding.modelText.text = "Modelo: ${modelText}, v:${VERSION_ID}"
 
         if (allPermissionsGranted()) {
             Log.d("ZT_MainActivity", "ALl permissions granted")
