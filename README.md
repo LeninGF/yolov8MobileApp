@@ -56,7 +56,7 @@ Puede observarse que el modelo de 16 bits es más ligero y portable
 para dispositivos móviles. Adicionalmente se utilizaron los scripts de
 evaluación para conocer el rendimiento del modelo de 16 bits. 
 
-```python
+``` python
 python val.py --weights yolov5s-fp16.tflite
 ```
 
@@ -65,7 +65,15 @@ siguientes. En general el modelo tiene una velocidad promedio de 0.4
 ms para pre procesamiento y 268.4 ms para inferencia. La Precisión es
 de 0.675, el Recall de 0.675 y el mAP50 de 0.71.
 
+### Matriz de Confusión
+![Matriz de Confusión](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/confusion_matrix.png)
+### Precision vs Recall
+![Precision-Recall](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/PR_curve.png)
 
+Más imágenes se pueden consultar en la carpeta de [reports](https://github.com/LeninGF/yolov8MobileApp/tree/main/yolov8mobileapp/reports)
+
+## 4. Captura de Imágenes en Tiempo Real 
+Varias capturas se han llevado a cabo con la Aplicación YOLO EPN Tflite. Éstas se encuentran en la carpeta 
 
 
 
