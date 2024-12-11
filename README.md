@@ -39,7 +39,7 @@ principales son:
 ```
 ## 2. Configuración Modelo YOLO
 android_app\app\src\main\assets
-1. Se coloca el modelo en la carpeta de [assets](./android_app\app\src\main\assets)
+1. Se coloca el modelo en la carpeta de [assets](./android_app/app/src/main/assets)
 2. Se coloca el archivo de labels en la carpeta de assets
 3. Se ajusta las direcciones en el archivo `android_app/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt`
 4. Reconstruir la aplicación y ejecutar
