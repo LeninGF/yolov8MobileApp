@@ -104,3 +104,10 @@ Para la instalación:
 4. Acepte el acceso a la cámara.
 4. Apunte la cámara hacia los objetos que sean de su interés explorar. La lista de categorías puede ver en el siguiente [enlace](https://github.com/LeninGF/yolov8MobileApp/blob/main/android_app/app/src/main/assets/labels_es.txt)
 
+## 7. Retos y soluciones
+Uno de los principales retos al momento de desarrollar la apk fue la
+integración entre el modelo de machine learning y el lenguaje de
+programación Kotlin utilizado por Google en Android
+Studio. Adicionalmente, otro desafío fue la interpretación de los
+tensores de salida del Modelo YOLO pues, la salida de diferentes
+versiones del modelo varía significativamente.
