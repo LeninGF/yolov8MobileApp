@@ -42,8 +42,7 @@ principales son:
     cp yolov8mobileapp\models\yolov5s-fp16.tflite  android_app\android_app\app\src\main\assets\
 ```
 ## 2. Configuración Modelo YOLO
-android_app\app\src\main\assets
-android_app\app\src\main\java\com\surendramaran\yolov8tflite\Constants.kt
+
 1. Se coloca el modelo en la carpeta de [assets](./android_app/app/src/main/assets)
 2. Se coloca el archivo de labels en la carpeta de assets
 3. Se ajusta las direcciones en el archivo [Constants.kt](https://github.com/LeninGF/yolov8MobileApp/blob/main/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt)
