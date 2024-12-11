@@ -39,9 +39,10 @@ principales son:
 ```
 ## 2. Configuración Modelo YOLO
 android_app\app\src\main\assets
+android_app\app\src\main\java\com\surendramaran\yolov8tflite\Constants.kt
 1. Se coloca el modelo en la carpeta de [assets](./android_app/app/src/main/assets)
 2. Se coloca el archivo de labels en la carpeta de assets
-3. Se ajusta las direcciones en el archivo `android_app/android_app/app/src/main/java/com/surendramaran/yolov8tflite/Constants.kt`
+3. Se ajusta las direcciones en el archivo [Constants.kt](./android_app/app/src/main/java/com/surendramaran/yolo8tflite/Constants.kt)
 4. Reconstruir la aplicación y ejecutar
 
 ## 3. Optimización de Modelos para móviles
@@ -51,6 +52,10 @@ Los scripts de exportación de formato por defecto generan versiones de
 - Modelo de 16 bits: [yolov8n_float16.tflite](./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float16.tflite) de 65 MBytes
 - Modelo de 32 bits: [yolov8n_float32.tflite](./yolov8mobileapp/models/yolov8n_savedmodel/yolov8n_float32.tflite) de 129 MBytes
 
-Puede observarse que el modelo de 16 bits es más ligero y portable para dispositivos móviles.
+Puede observarse que el modelo de 16 bits es más ligero y portable
+para dispositivos móviles. Adicionalmente se utilizaron los scripts de
+evaluación para conocer el rendimiento del modelo de 16 bits. Los resultados de clasificación se pueden observar en las Figuras.
+
+
 
 
