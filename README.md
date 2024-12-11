@@ -69,7 +69,7 @@ ms para pre procesamiento y 268.4 ms para inferencia. La Precisión es
 de 0.675, el Recall de 0.675 y el mAP50 de 0.71.
 
 ### Matriz de Confusión
-![Matriz de Confusión](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/confusion_matrix.png)
+![Matriz de Confusión](./yolov8mobileapp/reports/figures/validation_exported_model/confusion_matrix.png)
 ### Precision vs Recall
 ![Precision-Recall](https://github.com/LeninGF/yolov8MobileApp/blob/main/yolov8mobileapp/reports/figures/validation_exported_model/PR_curve.png)
 
